@@ -12,5 +12,10 @@ install_system_tool() {
     apt -y install dstat
 }
 
+update_security_package() {
+    unattended-upgrade -d
+}
+
 update_apt
+update_security_package
 install_system_tool
